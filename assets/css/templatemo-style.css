@@ -808,4 +808,15 @@ section.contact-me {
     .isotope-toolbar {
         margin-bottom: 20px;
     }
+
 }
+
+body, p, span, h1, h2, h3, h4, h5, h6 {
+  color: white !important;
+  text-shadow:
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+
