@@ -513,9 +513,16 @@
       };
 
       $(".main-menu").on("click", "a", function(e) {
-        e.preventDefault();
-        showSection($(this).attr("href"), true);
-      });
+  var target = $(this).attr("href");
+
+  // If link starts with "#" → scroll to section
+  if (target.startsWith("#")) {
+    e.preventDefault();
+    showSection(target, true);
+  }
+  // If link goes to another page → allow default behavior
+});
+
 
       $(window).scroll(function() {
         checkSection();
@@ -523,6 +530,7 @@
     </script>
   </body>
 </html>
+
 
 
 
