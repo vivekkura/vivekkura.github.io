@@ -512,16 +512,21 @@
         });
       };
 
-      $(".main-menu").on("click", "a", function(e) {
+     $(".main-menu").on("click", "a", function(e) {
   var target = $(this).attr("href");
 
-  // If link starts with "#" → scroll to section
+  // 1. If it opens another page → DO NOTHING (let browser navigate)
+  if (target.endsWith(".html")) {
+    return;
+  }
+
+  // 2. If it scrolls to a section → prevent default and scroll
   if (target.startsWith("#")) {
     e.preventDefault();
     showSection(target, true);
   }
-  // If link goes to another page → allow default behavior
 });
+
 
 
       $(window).scroll(function() {
@@ -530,6 +535,7 @@
     </script>
   </body>
 </html>
+
 
 
 
