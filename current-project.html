@@ -1,35 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Hoverboard Project</title>
-
-  <style>
-    body {
-      background: white;
-      color: black;
-      font-family: Arial, sans-serif;
-      padding: 40px;
-    }
-    h1 {
-      font-size: 40px;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-    }
-  </style>
-</head>
-
 <body>
-  <h1>The Hoverboard Project</h1>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    font-family: Arial, sans-serif;
+  }
 
+  /* Left Half - Black */
+  .left-side {
+    width: 50%;
+    background: #000000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+
+  /* Right Half - White + Red theme */
+  .right-side {
+    width: 50%;
+    background: #ffffff;
+    color: #222;
+    padding: 40px;
+    box-sizing: border-box;
+    border-left: 8px solid #b33a3a; /* red border */
+  }
+
+  h1 {
+    color: #b33a3a; /* red heading */
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+</style>
+
+<div class="left-side">
+  <h1>The Hoverboard Project</h1>
+</div>
+
+<div class="right-side">
+  <h1>Project Overview</h1>
   <p>
-    This page will contain the complete details of my hoverboard project —
-    design, aerodynamics, simulations, testing, and development progress.
+    This page will contain the complete details of my hoverboard project — design, 
+    aerodynamics, simulations, testing, and development progress.
   </p>
+</div>
 
 </body>
-</html>
