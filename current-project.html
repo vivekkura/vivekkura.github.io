@@ -12,27 +12,34 @@
   .left-side {
     width: 50%;
     background: #000000;
-    color: white;
+    color: #c24a4a;
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* shifted UP */
     justify-content: center;
-    padding: 40px;
+    padding-top: 40px; /* spacing from top */
     box-sizing: border-box;
   }
 
-  /* Right Half - White + Red theme */
+  /* Right Half - White */
   .right-side {
     width: 50%;
     background: #ffffff;
     color: #222;
-    padding: 40px;
+    padding-top: 40px;
+    padding-left: 40px;
     box-sizing: border-box;
-    border-left: 8px solid #b33a3a;
+    border-left: 10px solid #b33a3a;
   }
 
   h1 {
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0;
     color: #b33a3a;
-    margin-top: 0;
+  }
+
+  .left-side h1 {
+    color: #c24a4a; /* red color for left title */
   }
 </style>
 
